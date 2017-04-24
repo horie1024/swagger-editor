@@ -4,7 +4,8 @@ import EditorLayout from "./layout"
 import "swagger-ui/dist/swagger-ui.css"
 
 import EditorPlugin from "./plugins/editor"
-import LocalStoragePlugin from "./plugins/local-storage"
+//import LocalStoragePlugin from "./plugins/local-storage"
+import EditLocalFilePlugin from "./plugins/edit-local-file"
 import TopBarPlugin from "./plugins/topbar"
 import ValidationApiPlugin from "./plugins/validation/apis"
 
@@ -18,7 +19,7 @@ const defaults = {
     EditorPlugin,
     TopBarPlugin,
     ValidationApiPlugin,
-    LocalStoragePlugin
+    EditLocalFilePlugin
   ],
   components: {
     EditorLayout,

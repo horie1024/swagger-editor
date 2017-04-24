@@ -106,12 +106,12 @@ module.exports = function(options) {
       chunkFilename: '[id].[chunkhash].js'
     },
 
-    target: 'web',
+    target: 'node',
 
     // yaml-js has a reference to `fs`, this is a workaround
-    node: {
-      fs: 'empty'
-    },
+    //node: {
+      //fs: 'empty'
+    //},
 
     module: {
       loaders: loaders,
@@ -132,7 +132,8 @@ module.exports = function(options) {
       packageAlias: 'browser',
       alias: {
         'react': path.resolve(__dirname, 'node_modules', 'react'),
-        'swagger-jx': path.resolve(__dirname, 'node_modules', 'swagger-jx')
+        'swagger-jx': path.resolve(__dirname, 'node_modules', 'swagger-jx'),
+        'yaml-js': path.resolve(__dirname, 'node_modules/yaml-js/yaml.js')
       }
     },
 

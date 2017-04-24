@@ -2,7 +2,7 @@
   "name": "swagger-editor",
   "description": "Swagger Editor",
   "version": "3.0.6",
-  "main": "dist/swagger-editor.js",
+  "main": "main.js",
   "repository": "git@github.com:swagger-api/swagger-editor.git",
   "license": "Apache-2.0",
   "contributors": [
